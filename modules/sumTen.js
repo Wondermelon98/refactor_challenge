@@ -4,6 +4,7 @@ const sumTen = (n) => {
   while (n > 0) {
     const r = n % 10;
     n = (n - r) / 10;
+
     sum += r;
   }
   return !(sum % 10);

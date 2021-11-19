@@ -2,9 +2,10 @@ import isPrimeCheck from "./modules/isPrimeCheck.js";
 import isInteresting from "./modules/isInteresting.js";
 
 let button = document.querySelector("#submitButton");
+let input = document.querySelector("#numberInput");
+let primeInput = document.querySelector("#primeInput");
 
 button.addEventListener("click", () => {
-  let input = document.querySelector("#numberInput");
   let value = parseInt(input.value);
 
   let interesting = isInteresting(value);
@@ -14,8 +15,7 @@ button.addEventListener("click", () => {
 });
 
 document.querySelector("#primeButton").addEventListener("click", () => {
-  let input = document.querySelector("#primeInput");
-  let n = parseInt(input.value);
+  let n = parseInt(primeInput.value);
 
   isPrimeCheck(n);
 
